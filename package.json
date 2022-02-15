@@ -1,6 +1,6 @@
 {
   "name": "vue3-ts-country-region-select",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Country select component and Region select component for Vue 3, forked from the original \"vue-country-region-select\" project (Vue 2), and reference the change from vue3-ts-country-region-select. Work together and standalone.",
   "repository": "https://github.com/kkkelvinkk/vue3-ts-country-region-select",
   "author": "Kelvin Yip <kelvin@cybersecthreat.com>",

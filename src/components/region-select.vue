@@ -12,6 +12,7 @@ export default {
     regionName: Boolean,
     className: String,
     shortCodeDropdown: Boolean,
+    autocomplete: Boolean,
     placeholder: {
       type: String,
       default: 'Select Region'
@@ -74,7 +75,7 @@ export default {
           return elem.countryShortCode === country
         }
       }).regions
-      if (this.$i18n && this.usei18n) {
+      if (this.usei18n && this.$i18n) {
         countryRegions = countryRegions.map((region) => {
           let localeRegion = Object.assign({}, region)
           localeRegion.name = this.$t(region.name)
