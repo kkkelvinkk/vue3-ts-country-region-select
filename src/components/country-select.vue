@@ -102,7 +102,7 @@
     },
     methods: {
       onChange(country) {
-        this.$emit('input', country)
+        this.$emit('update:modelValue', country)
       },
       topCountryName() {
         const regionObj = regions.find((region) => {

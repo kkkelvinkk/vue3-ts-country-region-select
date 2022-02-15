@@ -1,16 +1,18 @@
 {
-  "name": "vue-country-region-select",
-  "version": "2.0.16",
-  "description": "A Country select component and Region select component for Vue.js. Work together and standalone.",
-  "repository": "https://github.com/gehrj/vue-country-region-select",
-  "author": "Justin Gehr <gehrjay@gmail.com>",
+  "name": "vue3-ts-country-region-select",
+  "version": "1.0.0",
+  "description": "A Country select component and Region select component for Vue 3, forked from the original \"vue-country-region-select\" project (Vue 2), and reference the change from vue3-ts-country-region-select. Work together and standalone.",
+  "repository": "https://github.com/kkkelvinkk/vue3-ts-country-region-select",
+  "author": "Kelvin Yip <kelvin@cybersecthreat.com>",
   "license": "MIT",
   "keywords": [
-    "vue-country-region-select",
+    "vue3-ts-country-region-select",
     "vue-country-state-select",
     "vue country select",
     "vue region select",
     "vue",
+    "vue 3",
+    "vue3",
     "select",
     "country",
     "region",
@@ -20,7 +22,7 @@
     "region select",
     "lightweight",
     "state select",
-    "state",   
+    "state",
     "vue state select",
     "country dropdown",
     "dropdown",
@@ -46,13 +48,17 @@
   ],
   "main": "./dist/vueCountryRegionSelect.umd.min.js",
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.6.0",
-    "@vue/cli-plugin-eslint": "^3.0.5",
-    "@vue/cli-service": "^3.6.0",
-    "vue-template-compiler": "^2.5.17"
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0"
   },
   "eslintConfig": {
     "root": true,
@@ -60,7 +66,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/vue3-essential",
       "eslint:recommended"
     ],
     "rules": {},

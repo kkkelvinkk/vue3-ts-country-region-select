@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue'
+import { createI18n } from "vue-i18n"
 
-Vue.config.productionTip = false
+const app = createApp(App);
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+const i18n = createI18n();
+app.use(i18n);
+
+app.mount('#app');

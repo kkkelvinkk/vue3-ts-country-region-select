@@ -1,10 +1,10 @@
 import CountrySelect from '@/components/country-select.vue'
 import RegionSelect from '@/components/region-select.vue'
 
-const install = function (Vue) {
+const install = function (app) {
     const components = { CountrySelect, RegionSelect }
     Object.keys(components).forEach(name => {
-        Vue.component(name, components[name])
+        app.component(name, components[name])
     })
 }
 
