@@ -76,15 +76,16 @@ export default {
         }
       }).regions
       if (this.usei18n && this.$i18n) {
-        countryRegions = countryRegions.map((region) => {
-          let localeRegion = Object.assign({}, region)
-          localeRegion.name = this.$t(region.name)
-          return localeRegion
-        })
-        countryRegions.sort((region1, region2) => {
-          return region1.name > region2.name ? 1 : -1
-        })
+          countryRegions = countryRegions.map((region) => {
+            let localeRegion = Object.assign({}, region)
+            localeRegion.name = this.$t(region.name)
+            return localeRegion
+          })
+          countryRegions.sort((region1, region2) => {
+            return region1.name > region2.name ? 1 : -1
+          })
       }
+
       if (this.whiteList) {
         countryRegions = countryRegions.filter((region) => {
           return this.whiteList.includes(region.shortCode)

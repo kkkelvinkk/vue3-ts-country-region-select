@@ -55,15 +55,16 @@
           })
         }
         if (this.usei18n && this.$i18n) {
-          countryList = countryList.map((country) => {
-            let localeCountry = Object.assign({ }, country)
-            localeCountry.countryName = this.$t(country.countryName)
-            return localeCountry
-          })
-          countryList.sort((country1, country2) => {
-            return (country1.countryName > country2.countryName) ? 1 : -1
-          })
+            countryList = countryList.map((country) => {
+              let localeCountry = Object.assign({ }, country)
+              localeCountry.countryName = this.$t(country.countryName)
+              return localeCountry
+            })
+            countryList.sort((country1, country2) => {
+              return (country1.countryName > country2.countryName) ? 1 : -1
+            })
         }
+
         if (this.removePlaceholder) {
           let c = this.firstCountry || countryList[0][this.valueType]
           this.onChange(c)
@@ -113,7 +114,7 @@
           }
         })
         if (this.usei18n && this.$i18n) {
-          return this.$t(regionObj.countryName)
+            return this.$t(regionObj.countryName)
         }
         return this.shortCodeDropdown ? regionObj.countryShortCode : regionObj.countryName
       }
